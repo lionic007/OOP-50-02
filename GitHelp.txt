@@ -1,0 +1,10 @@
+Команды на один раз для устройства ПК\Ноут
+git config --global.name ""
+
+Команды один раз на проекте
+git init
+git remote add origin https://github.com/lionic007/OOP-50-02.git
+
+Частые команды
+git add .   (Добавляет в отслеживание весь проект)
+git status (Отображает состояние изменений в отслеживании)
