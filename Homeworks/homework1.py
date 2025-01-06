@@ -13,3 +13,5 @@ class Hero:
         else:
             return False
 
+    def __str__(self):
+        return f"Имя {self.name} \n Уровень {self.lvl} \n Жизнь {self.hp}"
