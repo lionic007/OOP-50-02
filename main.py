@@ -1,4 +1,4 @@
-from Homeworks.homework1 import Hero
+from hw.homework1 import Hero
 
 def main():
 
