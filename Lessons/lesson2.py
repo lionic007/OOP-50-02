@@ -7,7 +7,7 @@
 
 # Наследование
 
-from hw.homework1 import Hero
+from HomeWorks.homework1 import Hero
 
 
 class ShieldHero(Hero):

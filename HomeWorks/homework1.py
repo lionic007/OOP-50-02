@@ -15,3 +15,9 @@ class Hero:
 
     def __str__(self):
         return f"Имя {self.name} \n Уровень {self.lvl} \n Жизнь {self.hp}"
+
+    def action(self):
+        return f"{self.name} Принял боевую стойку!"
+
+    def attack(self):
+        return f"{self} наносит урон 20"
