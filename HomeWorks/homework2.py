@@ -16,13 +16,14 @@ class Archer(Hero):
 
     def attack(self):
         """Переназначенный метод: Проверяет наличие стрел и в случае успеха, наносит атаку с вероятностью precision"""
-        if self.precision < 1: return False
+        if self.arrows < 1: return False
 
         gender_done_text = "Нанес" if self.gender == 'male' else 'Нанесла'
         gender_fail_text = "Промахнулся" if self.gender == 'male' else 'Промахнулась'
 
         self.arrows -= 1
         random_attack = randint(1, 100)
+        print(f"RANDOM> {random_attack}")
         if random_attack <= self.precision:
             print(f"{self.name} {gender_done_text} урон")
         else:

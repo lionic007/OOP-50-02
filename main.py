@@ -9,17 +9,18 @@ def main():
     # print(str(spider_man))
 
     # Экземпляр класса Archer
-    lara_croft = Archer("Lara Croft", 1, 100, 5, 50, 'female')
+    lara_croft = Archer("Lara Croft", 1, 100, 5, 30, 'female')
 
-    lara_croft.attack()
+    for i in range(1, 7):
+        if not lara_croft.attack():
+            print(f"Нехватает стрел!!!")
+
+    print(f"{lara_croft.status()}")
     lara_croft.rest()
     print(f"{lara_croft.status()}")
-    lara_croft.setPrecision(90)
+    lara_croft.setPrecision(80)
     print(f"{lara_croft.status()}")
-
-    for i in range(1, 10):
-        lara_croft.setPrecision(i)
-
+    lara_croft.attack()
 
 # Точка входа приложения
 main()
