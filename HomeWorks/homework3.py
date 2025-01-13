@@ -22,5 +22,6 @@ class Jester(Hero):
 
 # Домашнее задание 3 (Абстракция)
 joker = Jester('Jocker', 42, 50)
-
+joker.unique_scream()
+joker.unique_attack()
 joker.action()
