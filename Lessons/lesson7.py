@@ -87,7 +87,16 @@ def get_all_users():
     else:
         print(f"Список пользователей пуст")
 
-get_all_users()
+def detail_view_user_by_id(id):
+    cursor.execute(
+        'SELECT * FROM users WHERE rowid = ?',
+        (id,)
+    )
+    user = cursor.fetchall()
+    print(f"User: {user}")
+
+# get_all_users()
+detail_view_user_by_id(1)
             
 
 
